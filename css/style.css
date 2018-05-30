@@ -1,0 +1,574 @@
+/************PC************/
+
+/****** common style ******/
+
+*{
+  box-sizing: border-box;
+}
+body,ul {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway' sans-serif;
+}
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clear-fix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.primary-btn {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 30px;
+  border: 1px solid #ffffff;
+}
+.primary-btn:hover {
+  opacity: 0.8;
+}
+
+/****** banner style ******/
+
+.banner {
+  background-image: url(../images/banner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-bottom: 140px;
+  min-height: 100vh;
+}
+.logo a {
+  font-size: 30px;
+}
+.banner li {
+  display: inline;
+  margin-left: 30px;
+}
+.banner a {
+  color: white;
+  text-decoration: none;
+}
+.banner a:hover {
+  opacity: 0.7;
+}
+.banner h1 {
+  padding: 150px 0 0 0;
+  font-size: 60px;
+  font-weight: lighter;
+  margin: 0;
+}
+.banner hr {
+  width: 280px;
+}
+.banner h4 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 0;
+  margin-top: 30px;
+}
+.banner .primary-btn {
+  background: #a5a9b3;
+}
+
+/****** our services style ******/
+
+.services {
+  background-image: url(../images/our_service_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  color: black;
+  text-align: center;
+}
+.services h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  margin: 0 0 10px;
+}
+h1.border {
+ position: relative;
+}
+.services h1.border:after {
+ content: '';
+ position: absolute;
+ width: 50px;
+ height: 2px;
+ top: calc(100% + 10px);
+ left: 50%;
+ transform: translate(-50%);
+ background: black;
+}
+.services .service {
+  width: 30%
+}
+.services .service img {
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+}
+.services .service h2 {
+  margin-bottom: -10px;
+}
+.services .service p {
+  margin: 30px 0;
+  color: black;
+}
+
+/****** what else we provide? ******/
+
+.provides {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+.provides h1 {
+  padding-left: 75px;
+  font-size: 40px;
+  font-weight: lighter;
+}
+h1.border {
+  position: relative;
+}
+.provides h1.border:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(100% + 10px);
+  right: 65%;
+  transform: translate(-50%);
+  background: black;
+}
+.provides .inner {
+  padding-left: 80px;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-position: left center;
+}
+.provides .inner:nth-child(1) {
+  background-image: url(../images/global.png);
+}
+.provides .inner:nth-child(2) {
+  background-image: url(../images/coffee.png);
+}
+.provides .inner:nth-child(3) {
+  background-image: url(../images/dev.png);
+}
+.provides .wrapper .info, .provides .wrapper .mob-img {
+  float: left;
+  width: 50%;
+}
+.provides .wrapper .mob-img img {
+  max-width: 100%;
+}
+
+/****** do you want to ******/
+
+.consult {
+  background-image: url(../images/do_you_want_to_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+  color: #ffffff;
+}
+.consult h1 {
+  padding-left: 75px;
+  font-size: 40px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 0px;
+}
+.consult .employees, .consult .about{
+  background-color: #585859;
+  background-size: 562px 148px;
+  opacity: 0.5;
+  margin-left: 10px;
+}
+.consult h2 {
+  text-align: center;
+  color: #ffffff;
+  margin: 0px;
+}
+.consult .primary-btn {
+  margin-left: 163px;
+  margin-bottom: 20px;
+  border: 1px solid #ffffff;
+}
+.consult .wrapper .employees, .consult .wrapper .about {
+  float: left;
+  width: 50%;
+}
+
+/****** our team ******/
+
+.team {
+  padding: 60px 0;
+  text-align: center;
+}
+.team h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  margin: 0 0 10px;
+}
+h1.border {
+  position: relative;
+}
+.team h1.border:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translate(-50%);
+  background: black;
+}
+.team .member {
+  position: relative;
+}
+.team .member img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.team .member .overlay{
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:321px;
+  width: 326px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #9199a5;
+}
+.team .member:hover .overlay {
+  opacity: 0.6;
+}
+.team .member .overlay h2,.team .member .overlay h3 {
+  color: #ffffff;
+  font-size: 20px;
+  transform: translate(0%, 250%);
+}
+.team .member h2 {
+  margin-bottom: -20px
+}
+.team .member .overlay img {
+  width: 20px;
+  height: 20px;
+  display: inline;
+  align-content: center;
+  transform: translate(0%, 330%);
+}
+
+/****** section6 company comp_info ******/
+
+.company {
+  background-image: url(../images/comp_info_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+  text-align: center;
+}
+.company .flex .comp_info img{
+  width: 50px;
+  height: 50px;
+}
+
+/****** what our clients say ******/
+
+.clients {
+  background-image: url(../images/client_bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+  color: #ffffff;
+}
+.clients h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  margin: 0 0 10px;
+}
+h1.border {
+  position: relative;
+}
+.clients h1.border:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translate(-50%);
+  background: #ffffff;
+}
+.clients .wrapper .client img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-top: 50px;
+}
+.clients .wrapper .client p {
+  margin-top: 50px;
+}
+.clients .wrapper .client h2 {
+  margin-bottom: -20px;
+}
+
+/****** our work ******/
+
+.work {
+  padding: 60px 0;
+  text-align: center;
+}
+.work h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  margin: 0 0 10px;
+}
+h1.border {
+  position: relative;
+}
+.work h1.border:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translate(-50%);
+  background: black;
+}
+.work .buttons .primary-btn {
+  background-color: #756564;
+  margin-bottom: 30px;
+  border: 0px;
+}
+.work .images {
+  box-sizing: border-box;
+}
+.work .images img {
+  width: 266px;
+  height: 182px;
+}
+
+/****** who we are? ******/
+
+.who {
+  padding: 60px 0;
+}
+.who .section1 {
+  background-image: url(../images/who_bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 58px;
+}
+.who .section1 h1, .who .section1 p, .who .section1 ul {
+  padding-top: 20px;
+  padding-left: 30px;
+  color: #ffffff;
+}
+.who .section1 ul{
+  padding-left: 80px;
+}
+.who .section1, .who .section2{
+  float: left;
+  width: 50%;
+}
+.who .section2 {
+  background-color: #756564;
+  padding: 30px;
+  height: 340px;
+}
+.skill-progress {
+  background-color: #ffffff;
+}
+.highlight {
+  background: #1d3455;
+  height: 16px;
+  position: relative;
+}
+.skill.design1 .highlight { width: 87%; }
+.skill.design2 .highlight { width: 93%; }
+.skill.design3 .highlight { width: 77%; }
+.skill.design4 .highlight { width: 82%; }
+.highlight:after {
+    content: attr(data-percentage);
+    position: absolute;
+    right: 0;
+    top: -34px;
+}
+
+/****** want to know more ******/
+
+.section10 {
+  padding: 40px 0;
+  background-color: #6a7380;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section10 h3 {
+  float: left;
+  color: #ffffff;
+  padding-top: 35px;
+}
+.section10 .primary-btn  {
+  margin-left: 150px;
+  margin-top: 45px;
+}
+
+/****** about us ******/
+
+.about_us {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+h1.border {
+  position: relative;
+}
+.about_us h1.border:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translate(-50%);
+  background: black;
+}
+.about_us h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 0;
+  margin-bottom: 50px;
+}
+.about_us .info1 .content, .about_us .info2 .video {
+  float: left;
+  width: 50%;
+}
+.about_us .info2 .video video {
+  max-width: 100%;
+  float: right;
+  padding-left: 20px;
+}
+
+/****** company logos (tie_up) (section 12) ******/
+
+.tie_up {
+  padding: 60px 0;
+  background-image: url(../images/tieup_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tie_up .wrapper img {
+  padding: 0 5px;
+  width: 130px;
+}
+
+/****** latest news ******/
+
+.latest {
+  padding: 60px 0;
+  text-align: center;
+}
+.latest h1 {
+  font-size: 40px;
+  font-weight: lighter;
+  margin: 0 0 10px;
+}
+h1.border {
+  position: relative;
+}
+.latest h1.border:after {
+  content: '';
+  position: absolute;
+  width:50px;
+  height: 2px;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translate(-50%);
+  background: black;
+}
+.latest .news {
+  padding-top: 40px;
+  padding-left: 5px;
+}
+.latest .news img {
+  width: 100%;
+}
+.latest .news h2, .latest .news div {
+  text-align: left;
+}
+.latest .primary-btn {
+  border: 1px solid #ffffff;
+}
+
+/****** socialmedia icons ******/
+
+.social {
+  padding: 60px 0;
+  background-image: url(../images/socialmedia_icons.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.social img {
+  width: 50px;
+  height: 50px;
+}
+
+/****** get in touch ******/
+
+.contact {
+  padding: 60px 0;
+}
+.contact .section1 video {
+  max-width: 136%;
+}
+.contact .section2 div {
+  padding-right: 112px;
+  padding-left: 98px;
+}
+
+.contact .inner1 {
+  padding-left: 20px;
+}
+.contact .inner1 {
+  padding-left: 60px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: left center;
+}
+.contact .inner1:nth-child(2) {
+  background-image: url(../images/contact1.png);
+}
+.contact .inner1:nth-child(3) {
+  background-image: url(../images/contact2.png);
+}
+.contact .inner1:nth-child(4) {
+  background-image: url(../images/contact3.png);
+}
+
+/****** footer ******/
+
+.copy {
+  padding: 25px 0;
+  background-color: #212121;
+}
+.copy .copywright {
+  color: white;
+}
