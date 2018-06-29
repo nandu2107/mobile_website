@@ -499,7 +499,6 @@ h2.border {
   width: 20%;
   left: 50%;
   margin: 0 auto;
-  /* transform: translatex(0,-50%); */
   border-radius: 50%;
   padding: 0;
 }
@@ -539,13 +538,21 @@ h2.border {
 .row {
   margin: 12px 0px;
 }
-.row, .row > .column {
+.row,
+.row > .column {
   padding: 0px;
+}
+.column {
+  display: none;
 }
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+.work-content {
+  background-color: white;
+  padding: 0px;
 }
 .show {
   display: block;
@@ -881,10 +888,12 @@ h2.border {
       padding: 0;
       margin: 0;
     }
+
     .team_slide .screen {
       width: 50%;
       height: auto;
     }
+
 }
 @media only screen and (max-width:959px) and (min-width:651px) {
     .work-content {
@@ -1053,17 +1062,39 @@ h2.border {
   /* what our clients say style ends */
 
   /* our work style starts */
-  .column {
-    float: left;
-    width: 20%;
-  }
-  .show {
-    margin-bottom: -2px;
-  }
+
   .work .work-content img {
     width: 100%;
     height: auto;
     margin-right: 3px;
+  }
+  .work #myBtnContainer {
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  .row {
+    margin: 12px 0px;
+  }
+  .row,.row > .column {
+    padding: 0px;
+  }
+  .column {
+    width: 20%;
+    float: left;
+    display: none;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .work-content {
+    background-color: white;
+    padding: 0px;
+  }
+  .show {
+    display: block;
+    margin-bottom: -2px;
   }
   /* our work style ends */
 
